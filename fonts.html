@@ -4,21 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fonts</title>
-
-    <!-- internal CSS -->
     
+     <!-- /* google fonts is fonts.google.com */ -->
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Fonts</title>
+    <!-- internal CSS -->
     <style>
+        /* body is where you add your font family because it effects your whole page */
+        body {
+            font-family: 'Roboto' , sans-serif; 
+            font-size: 18px;
+            line-height:1.6em
 
+        }
 
+        /* to target first span */
 
+        #welcome p span {
+            font-weight: bold;
+
+        }
+
+        /* to target second span */
+
+        #about p span{
+            font-style: italic;
+        }
     </style>
-
-
-
-
 </head>
+
+
 <body>
+
+    <div id="welcome">
+        <h2 class="primary-heading" >Welcome</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facere sed corporis aut libero 
+            quas tempora voluptatem <span>quibusdam minima, est alias, voluptate reprehenderit laudantium</span>
+            maxime vitae dolorem amet cum illum adipisci? Odio maiores officia iste reprehenderit ex. 
+            Veritatis, ex laudantium quidem quis doloremque cumque expedita iure quia exercitationem dolorem modi?
+        </p>
+    </div>
+
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum <span>dolor sit amet consectetur adipisicing elit.</span> 
+            Magni consectetur ipsa rerum assumenda accusamus 
+            id iure reiciendis velit! Ad, rerum?
+        </p>
+    </div>
     
 </body>
 </html>
