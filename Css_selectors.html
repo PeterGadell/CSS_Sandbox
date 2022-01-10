@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors with internal CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* we can style the body---body is where you style if you want the whole website or the whole webpage to have a background color */
+
+        body{
+            background-color: aquamarine;
+        }
+
+
+        /* class for primary heading */
+        .primary-heading{
+            color: rgb(15, 177, 15);
+        }
+
+        /* id for primary heading */
+        #welcome{
+            background-color: darkgray;
+            
+        }
+
+        /* multiple selectors */
+
+        #welcome, #about {
+            border: 2px solid red;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* lets say I want to target a specific paragraph inside a specific div */
+        /* Nested Selector */
+
+        #welcome p {
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        #about {
+            color: azure;
+        }
+
+    
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- in css # is for id's and . is for class---these are selectors -->
+
+    <div id="welcome">
+        <h2 class="primary-heading" >Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magni consectetur ipsa rerum assumenda accusamus 
+            id iure reiciendis velit! Ad, rerum?
+        </p>
+    </div>
+
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Magni consectetur ipsa rerum assumenda accusamus 
+            id iure reiciendis velit! Ad, rerum?
+        </p>
+    </div>
+    
+</body>
+</html>
